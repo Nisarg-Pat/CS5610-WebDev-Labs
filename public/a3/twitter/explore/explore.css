@@ -1,23 +1,34 @@
-.wd-A{
+body {
+    background: #000000;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    width: 550px;
+    font-family: Arial, serif;
+    margin: 16px auto;
+}
+
+.wd-A {
     margin-top: 8px;
     clear: both;
     padding-left: 16px;
     padding-bottom: 0;
 }
-.wd-input{
-    background-color: rgb(32,34,39);
+
+.wd-input {
+    background-color: rgb(32, 34, 39);
     border-radius: 32px;
     float: left;
     width: calc(100% - 50px);
 }
 
-.wd-input-search{
+.wd-input-search {
     padding-left: 16px;
     float: left;
     padding-top: 12px;
 }
 
-.wd-input-input{
+.wd-input-input {
     width: calc(100% - 64px);
     display: flex;
     font-size: 16px;
@@ -28,37 +39,37 @@
     float: left;
 }
 
-.wd-settings{
+.wd-settings {
     padding-right: 12px;
     padding-top: 12px;
     float: right;
 }
 
-.wd-B{
+.wd-B {
     font-size: 15px;
     clear: both;
 }
 
-.wd-B-selected{
+.wd-B-selected {
     font-weight: bold;
     float: left;
     padding: 16px;
-    color: rgb(29,161,242);
+    color: rgb(29, 161, 242);
 }
 
-.wd-B-selected-text{
+.wd-B-selected-text {
     padding-bottom: 16px;
     border: solid rgb(29, 161, 242);
     border-width: 0 0 1px 0;
 }
 
-.wd-B-unselected{
+.wd-B-unselected {
     float: left;
     padding: 16px;
     color: rgb(110, 118, 125);
 }
 
-.wd-C{
+.wd-C {
     clear: both;
     color: rgb(110, 118, 125);
     border-style: solid;
@@ -67,26 +78,26 @@
     padding: 16px;
 }
 
-.wd-C-img{
+.wd-C-img {
     float: right;
 }
 
-.wd-topic{
+.wd-topic {
     font-size: 13px;
 }
 
-.wd-topic-author{
+.wd-topic-author {
     color: white;
 }
 
-.wd-subject{
+.wd-subject {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 15px;
     color: white;
 }
 
-.wd-D{
+.wd-D {
     clear: both;
     color: rgb(110, 118, 125);
     border-style: solid;
@@ -95,7 +106,7 @@
     padding: 16px;
 }
 
-.wd-D-subject{
+.wd-D-subject {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -103,7 +114,7 @@
     color: white;
 }
 
-.wd-D-img{
+.wd-D-img {
     float: right;
     width: 100px;
     height: 100px;
@@ -112,15 +123,15 @@
     border-radius: 12px;
 }
 
-.wd-E{
-    clear:both;
+.wd-E {
+    clear: both;
 }
 
 
-.fa-search{
+.fa-search {
     color: grey;
 }
 
-.fa-cog{
+.fa-cog {
     color: white;
 }

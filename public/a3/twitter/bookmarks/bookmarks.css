@@ -1,5 +1,11 @@
 body {
+    background: #000000;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
     width: 594px;
+    font-family: Arial, serif;
+    margin: 16px auto;
 }
 
 .wd-bookmarks-A {
