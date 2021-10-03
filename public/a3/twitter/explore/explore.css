@@ -1,0 +1,126 @@
+.wd-A{
+    margin-top: 8px;
+    clear: both;
+    padding-left: 16px;
+    padding-bottom: 0;
+}
+.wd-input{
+    background-color: rgb(32,34,39);
+    border-radius: 32px;
+    float: left;
+    width: calc(100% - 50px);
+}
+
+.wd-input-search{
+    padding-left: 16px;
+    float: left;
+    padding-top: 12px;
+}
+
+.wd-input-input{
+    width: calc(100% - 64px);
+    display: flex;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 12px;
+    float: left;
+}
+
+.wd-settings{
+    padding-right: 12px;
+    padding-top: 12px;
+    float: right;
+}
+
+.wd-B{
+    font-size: 15px;
+    clear: both;
+}
+
+.wd-B-selected{
+    font-weight: bold;
+    float: left;
+    padding: 16px;
+    color: rgb(29,161,242);
+}
+
+.wd-B-selected-text{
+    padding-bottom: 16px;
+    border: solid rgb(29, 161, 242);
+    border-width: 0 0 1px 0;
+}
+
+.wd-B-unselected{
+    float: left;
+    padding: 16px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-C{
+    clear: both;
+    color: rgb(110, 118, 125);
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px 0 0 0;
+    padding: 16px;
+}
+
+.wd-C-img{
+    float: right;
+}
+
+.wd-topic{
+    font-size: 13px;
+}
+
+.wd-topic-author{
+    color: white;
+}
+
+.wd-subject{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.wd-D{
+    clear: both;
+    color: rgb(110, 118, 125);
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px 0 0 0;
+    padding: 16px;
+}
+
+.wd-D-subject{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.wd-D-img{
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+
+.wd-E{
+    clear:both;
+}
+
+
+.fa-search{
+    color: grey;
+}
+
+.fa-cog{
+    color: white;
+}

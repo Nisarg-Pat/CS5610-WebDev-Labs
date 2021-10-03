@@ -1,0 +1,9 @@
+body{
+    background: #000000;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    width: 550px;
+    font-family: Arial, serif;
+    margin: 16px auto;
+}
