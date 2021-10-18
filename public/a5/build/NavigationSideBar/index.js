@@ -6,7 +6,7 @@ const NavigationSidebar = (active) => {
                aria-current="true">
                 <i class="fab fa-twitter wd-navigation-twitter"></i>
             </a>
-            <a href="../HomeScreen/homescreen.html" class="list-group-item list-group-item-action ${active === 'home' ? 'wd-navigation-list-item-active' : 'wd-navigation-list-item'}">
+            <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action ${active === 'home' ? 'wd-navigation-list-item-active' : 'wd-navigation-list-item'}">
                 <div class="row">
                     <div class="col-1">
                         <i class="fas fa-home"></i>
@@ -16,7 +16,7 @@ const NavigationSidebar = (active) => {
                     </div>
                 </div>
             </a>
-            <a href="../ExploreScreen/explore.html" class="list-group-item list-group-item-action ${active === 'explore' ? 'wd-navigation-list-item-active' : 'wd-navigation-list-item'}"
+            <a href="../ExploreScreen/index.html" class="list-group-item list-group-item-action ${active === 'explore' ? 'wd-navigation-list-item-active' : 'wd-navigation-list-item'}"
                aria-current="true">
                 <div class="row">
                     <div class="col-1">
