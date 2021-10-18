@@ -1,0 +1,258 @@
+body {
+    background-color: black;
+    font-family: Arial, serif;
+    font-size: 15px;
+}
+
+.wd-navigation-list-item {
+    background-color: black;
+    color: rgb(217, 217, 217);
+    font-size: 20px;
+    padding: 12px;
+}
+
+.wd-navigation-list-item-active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.wd-navigation-twitter {
+    font-size: 30px;
+}
+
+.wd-navigation-text {
+    margin-left: 16px;
+}
+
+.wd-tweet-btn {
+    width: 100%;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 15px;
+}
+
+
+.wd-tweets {
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-tweets-search-settings {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 4px
+}
+
+.wd-tweets-search {
+
+}
+
+.wd-cog {
+    color: white;
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+.wd-search-icon {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    padding-left: 16px;
+    padding-top: 14px;
+    font-size: 16px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-search-input {
+    background-color: rgb(32, 35, 39);
+    padding: 12px 12px 12px 48px;
+    border-radius: 24px;
+    border: 0;
+    font-size: 14px;
+}
+
+.wd-nav {
+    border-width:0;
+}
+.wd-tweet-nav-item {
+    color: rgb(110, 118, 125);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-tweet-nav-item-active {
+    color: white;
+    font-weight: bold;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: rgb(29, 155, 240);
+    padding-bottom: 14px;
+}
+
+.wd-tweet-img {
+    width: 100%;
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-btn {
+    border-radius: 24px;
+}
+
+.wd-img-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-bold {
+    font-weight: bold;
+}
+
+
+.wd-flex {
+    display: flex;
+}
+
+.wd-v-center {
+    align-items: center;
+}
+
+.wd-h-right {
+    justify-content: end;
+}
+
+.wd-tweet-img-div {
+    position: relative;
+}
+
+
+
+.wd-tweet-img-desc {
+    position: absolute;
+    bottom: 0;
+    font-size: 28px;
+    font-weight: bold;
+    left: 8px;
+    z-index: 2;
+    color: white;
+}
+
+
+.wd-tweet-list-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+}
+
+.wd-color-grey {
+    color: rgb(110, 118, 125);
+}
+
+.wd-more-icon {
+    font-size: 0.5em;
+    position: relative;
+    right: 3px;
+}
+
+.wd-who-to-follow-text {
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.wd-list-item{
+    background-color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.wd-white{
+    color: rgb(217, 217, 217);
+}
+
+.wd-who-to-follow-item{
+    background-color: rgb(21, 24, 28);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.wd-who-to-follow-title{
+    background-color: rgb(21, 24, 28);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+}
+
+.wd-btn-follow{
+    background-color: rgb(239, 243, 244);
+    color: black;
+    font-weight: bold;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wd-who-to-follow {
+    border-radius: 12px;
+}
+
+.wd-blue {
+    color: rgb(29, 155, 240);
+}
+
+.wd-footer{
+    padding-top: 12px;
+}
+
+.wd-post {
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+}
+
+.wd-post-title {
+    padding: 6px 0 6px 0;
+}
+
+.wd-post-image-block {
+    border-radius: 12px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+}
+
+.wd-post-img {
+    border-radius: 12px 12px 0 0;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 0 0 1px 0;
+    width: 100%;
+    height: 264px;
+}
+
+.wd-post-img-all {
+    border-radius: 12px;
+    border-style: none;
+}
+
+.wd-post-img-desc {
+    padding: 12px;
+}
+
+.wd-post-numbers {
+    padding: 12px 12px 0 12px;
+}
+
+.wd-post-content {
+    padding-left: 24px;
+}
+
+.wd-padding-left-12 {
+    padding-left: 12px;
+}
