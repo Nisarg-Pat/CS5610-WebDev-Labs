@@ -4,7 +4,7 @@ import who from "./who.json"
 
 const WhoToFollowList = () => {
     return (
-        <div className="list-group wd-who-to-follow">
+        <div className="list-group wd-style-right">
             <div className="list-group-item wd-bold wd-white wd-who-to-follow-title">
                 Who to follow
             </div>

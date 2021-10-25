@@ -57,8 +57,9 @@ const PostItem = ({
                     <div className="row">
                         <div className="col-11">
                             <span className="wd-bold wd-white">
-                                {posts.userName} <i className="fas fa-check-circle"/>
+                                {posts.userName} <i className="fas fa-check-circle"/> <></>
                             </span>
+
                             <span className="wd-color-grey">
                                 {posts.userHandle} - {posts.time}
                             </span>

@@ -16,7 +16,9 @@ const HomeScreen = () => {
             </div>
 
             <div className="d-none d-lg-block col-lg-4 col-xl-3 col-xxl-4">
-                <PostSummaryList/>
+                <div className="wd-style-right">
+                    <PostSummaryList/>
+                </div>
             </div>
         </div>
     )

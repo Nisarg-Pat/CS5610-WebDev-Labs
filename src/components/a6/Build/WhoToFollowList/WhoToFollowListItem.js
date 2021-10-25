@@ -17,8 +17,7 @@ const WhoToFollowListItem = ({
                     className="col-lg-7 col-xl-6 col-xxl-8 wd-flex wd-v-center ps-lg-4 ps-xl-0 ps-xxl-3 wd-who-to-follow-text">
                     <div>
                         <div className="wd-bold wd-white">
-                            {who.userName}
-                            <i className="fas fa-check-circle"/>
+                            {who.userName} <i className="fas fa-check-circle"/>
                         </div>
                         <div className="wd-color-grey">@{who.handle}</div>
                     </div>

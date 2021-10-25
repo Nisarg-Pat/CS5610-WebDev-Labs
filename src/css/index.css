@@ -41,6 +41,7 @@ body {
 
 .wd-tweets {
     border: 1px solid rgb(47, 51, 54);
+    border-radius: 4px;
 }
 
 .wd-tweets-search-settings {
@@ -169,9 +170,7 @@ body {
 }
 
 .wd-list-item{
-    background-color: black;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    background-color: inherit;
 }
 
 .wd-white{
@@ -179,13 +178,13 @@ body {
 }
 
 .wd-who-to-follow-item{
-    background-color: rgb(21, 24, 28);
+    background-color: inherit;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
 .wd-who-to-follow-title{
-    background-color: rgb(21, 24, 28);
+    background-color: inherit;
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 20px;
@@ -199,8 +198,9 @@ body {
     padding-right: 16px;
 }
 
-.wd-who-to-follow {
+.wd-style-right{
     border-radius: 12px;
+    background-color: rgb(21, 24, 28);
 }
 
 .wd-blue {
