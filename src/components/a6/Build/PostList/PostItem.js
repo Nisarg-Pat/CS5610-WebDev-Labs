@@ -33,11 +33,11 @@ const NoTitleDescriptionOfImage = ({posts}) => {
 
 const PostItem = ({
                       posts = {
-                          userImage: "../images/jquery.png",
+                          userImage: "/images/jquery.png",
                           userName: "Elon Musk",
                           userHandle: "@elonmusk",
                           time: "23h",
-                          title: "Amazing show about <a href = '#'>@Inspiration4x</a> mission!",
+                          title: "Amazing show about @Inspiration4x mission!",
                           image: "/images/countdown.png",
                           imageTitle: "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
                           imageDesc: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ",
