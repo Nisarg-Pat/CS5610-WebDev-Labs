@@ -1,17 +1,16 @@
 import React from "react";
-import {Link} from "react-router-dom";
+
+import A6 from "./index";
+import History from "../history";
 
 const HelloWorld = () => {
 
     return(
         <>
+            <A6/>
             <h1>Hello World!</h1>
-            <Link to="/a6/practice">
-                Practice
-            </Link> |
-            <Link to="/a6/twitter/home">
-                Build
-            </Link>
+            <hr />
+            <History />
         </>
     );
 }
