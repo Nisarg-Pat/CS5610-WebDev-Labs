@@ -9,12 +9,6 @@ const Practice = () => {
     return(
         <>
             <h1>Practice</h1>
-            <Link to="/a6/hello">
-                Hello
-            </Link> |
-            <Link to="/a6/twitter/home">
-                Build
-            </Link>
             <TodoList/>
             <ConditionalOutput/>
             <Styles/>
