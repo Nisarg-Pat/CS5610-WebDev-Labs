@@ -33,25 +33,28 @@ const NoTitleDescriptionOfImage = ({posts}) => {
 }
 
 const TweetListItem = ({
-                      posts = {
-                          userImage: "/images/jquery.png",
-                          userName: "Elon Musk",
-                          userHandle: "@elonmusk",
-                          time: "23h",
-                          title: "Amazing show about @Inspiration4x mission!",
-                          image: "/images/countdown.png",
-                          imageTitle: "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
-                          imageDesc: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ",
-                          comment: "4.2K",
-                          retweet: "3.5K",
-                          like: "37.5K"
-                      }
-                  }) => {
+                           posts = {
+                               userImage: "/images/jquery.png",
+                               userName: "Elon Musk",
+                               userHandle: "@elonmusk",
+                               time: "23h",
+                               title: "Amazing show about @Inspiration4x mission!",
+                               image: "/images/countdown.png",
+                               imageTitle: "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+                               imageDesc: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ",
+                               comment: "4.2K",
+                               retweet: "3.5K",
+                               like: "37.5K"
+                           }
+                       }) => {
 
-    const dispatch= useDispatch();
+    const dispatch = useDispatch();
     const deleteTweetClickHandler = () => {
         dispatch({type: 'delete-tweet', tweet: posts});
     };
+    const likeClickHandler = () => {
+        dispatch({type: 'like-tweet', tweet: posts});
+    }
 
     return (
         <div className="list-group-item wd-list-item wd-border-bottom">
@@ -64,7 +67,8 @@ const TweetListItem = ({
                     <div className="row">
                         <div className="col-11">
                             <span className="wd-bold wd-white">
-                                {posts.userName} {posts.verified ? <i className="fas fa-check-circle"/> : ''} <></>
+                                {posts.userName} {posts.verified ? <i
+                                className="fas fa-check-circle"/> : ''} <></>
                             </span>
 
                             <span className="wd-color-grey">
@@ -99,7 +103,8 @@ const TweetListItem = ({
                                 {posts.retweet}
                             </span>
                         </div>
-                        <div className="col-3">
+                        <div className={`col-3 wd-pointer ${posts.liked ? `wd-red` : ``}`}
+                             onClick={likeClickHandler}>
                             <i className="fas fa-heart"/>
                             <span className="wd-padding-left-12">
                                 {posts.like}

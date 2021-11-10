@@ -12,7 +12,8 @@
     "imageDesc": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ",
     "comment": "4.2K",
     "retweet": "3.5K",
-    "like": "37.5K"
+    "like": 37500,
+    "liked": false
   },
   {
     "_id": 2,
@@ -25,7 +26,8 @@
     "image": "/images/brawlstars.png",
     "comment": "5.7K",
     "retweet": "4.5K",
-    "like": "103K"
+    "like": 103000,
+    "liked": false
   },
   {
     "_id": 3,
@@ -40,6 +42,7 @@
     "imageDesc": "Fixing a bug where the game was taking longer to load. Some crashes related to the ingame chat.",
     "comment": "1.3K",
     "retweet": "2.4K",
-    "like": "57K"
+    "like": 57034,
+    "liked": false
   }
 ]
