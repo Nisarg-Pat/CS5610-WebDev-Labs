@@ -47,7 +47,7 @@ const TweetListItem = ({
                       }
                   }) => {
     return (
-        <div className="list-group-item wd-list-item wd-post">
+        <div className="list-group-item wd-list-item wd-border-bottom">
             <div className="row wd-white">
                 <div className="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                     <img src={posts.userImage} className="wd-img-circle" alt={posts.userHandle}/>
