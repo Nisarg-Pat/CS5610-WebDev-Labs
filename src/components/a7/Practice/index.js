@@ -1,18 +1,12 @@
 import React from "react";
-import Classes from "./Classes";
-import Styles from "./Styles";
-import ConditionalOutput from "./ConditionalOutput";
-import TodoList from "./Todo/TodoList";
+import ReduxExamples from "./ReduxExamples/components";
 
 const Practice = () => {
     return(
-        <>
+        <div>
             <h1>Practice</h1>
-            <TodoList/>
-            <ConditionalOutput/>
-            <Styles/>
-            <Classes/>
-        </>
+            <ReduxExamples/>
+        </div>
     );
 };
 
