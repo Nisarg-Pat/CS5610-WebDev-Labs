@@ -31,7 +31,7 @@ const NoTitleDescriptionOfImage = ({posts}) => {
     )
 }
 
-const PostItem = ({
+const TweetListItem = ({
                       posts = {
                           userImage: "/images/jquery.png",
                           userName: "Elon Musk",
@@ -104,4 +104,4 @@ const PostItem = ({
         </div>
     );
 }
-export default PostItem;
+export default TweetListItem;

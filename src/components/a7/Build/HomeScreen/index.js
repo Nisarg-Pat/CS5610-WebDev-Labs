@@ -2,7 +2,7 @@ import React from "react";
 
 import NavigationSidebar from "../NavigationSideBar";
 import PostSummaryList from "../PostSummaryList";
-import PostList from "../PostList";
+import TweetList from "../TweetList";
 
 const HomeScreen = () => {
     return(
@@ -12,12 +12,12 @@ const HomeScreen = () => {
             </div>
 
             <div className="col-10 col-lg-7 col-xl-7 col-xxl-6">
-                <PostList/>
+                <TweetList/>
             </div>
 
             <div className="d-none d-lg-block col-lg-4 col-xl-3 col-xxl-4">
                 <div className="wd-style-right">
-                    <PostSummaryList/>
+                    <PostSummaryList title="What's happening"/>
                 </div>
             </div>
         </div>
