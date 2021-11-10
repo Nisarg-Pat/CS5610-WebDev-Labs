@@ -4,11 +4,11 @@ import HomeScreen from "./HomeScreen";
 import ExploreScreen from "./ExploreScreen";
 
 import who from "../../../reducers/who";
-import tweets from "../../../reducers/tweets";
+import tweetsReducer from "../../../reducers/tweetsReducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
-const reducer = combineReducers({who, tweets});
+const reducer = combineReducers({who, tweets: tweetsReducer});
 const store = createStore(reducer);
 
 const Build = () => {

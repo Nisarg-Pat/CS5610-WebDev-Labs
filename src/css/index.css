@@ -38,6 +38,15 @@ body {
     font-size: 15px;
 }
 
+.wd-tweet-btn2 {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 15px;
+}
+
 
 .wd-tweets {
     border: 1px solid rgb(47, 51, 54);

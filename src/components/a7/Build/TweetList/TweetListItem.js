@@ -1,4 +1,5 @@
 import React from "react";
+import {useDispatch} from "react-redux";
 
 const TitleDescriptionOfImage = ({posts}) => {
     return (
@@ -46,6 +47,12 @@ const TweetListItem = ({
                           like: "37.5K"
                       }
                   }) => {
+
+    const dispatch= useDispatch();
+    const deleteTweetClickHandler = () => {
+        dispatch({type: 'delete-tweet', tweet: posts});
+    };
+
     return (
         <div className="list-group-item wd-list-item wd-border-bottom">
             <div className="row wd-white">
@@ -57,7 +64,7 @@ const TweetListItem = ({
                     <div className="row">
                         <div className="col-11">
                             <span className="wd-bold wd-white">
-                                {posts.userName} <i className="fas fa-check-circle"/> <></>
+                                {posts.userName} {posts.verified ? <i className="fas fa-check-circle"/> : ''} <></>
                             </span>
 
                             <span className="wd-color-grey">
@@ -66,16 +73,19 @@ const TweetListItem = ({
                         </div>
                         <div className="col-1">
                             <span className="wd-h-right wd-color-grey">
-                                <i className="fas fa-ellipsis-h"/>
+                                <i onClick={deleteTweetClickHandler} className="fas fa-times"/>
                             </span>
                         </div>
                     </div>
                     <div className="wd-post-title">
                         {posts.title}
                     </div>
-                    {posts.imageTitle !== undefined ?
-                        <TitleDescriptionOfImage posts={posts}/>
-                        : <NoTitleDescriptionOfImage posts={posts}/>}
+                    {posts.image !== undefined ?
+                     (posts.imageTitle !== undefined ?
+                      <TitleDescriptionOfImage posts={posts}/>
+                                                     : <NoTitleDescriptionOfImage posts={posts}/>)
+                                               : <></>}
+
                     <div className="row wd-post-numbers wd-color-grey">
                         <div className="col-3">
                             <i className="far fa-comment"/>
