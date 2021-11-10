@@ -1,8 +1,9 @@
 import React from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
-import who from "../../../../reducers/data/who.json"
+import {useSelector} from "react-redux";
 
 const WhoToFollowList = () => {
+    const who = useSelector((state) => state);
     return (
         <div className="list-group wd-style-right">
             <div className="list-group-item wd-bold wd-white wd-who-to-follow-title">
