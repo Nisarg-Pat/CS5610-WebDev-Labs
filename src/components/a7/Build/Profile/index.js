@@ -1,10 +1,9 @@
 import React from "react";
 import {useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 
 const Profile = () => {
     const profile = useSelector((state) => state.profile)[0];
-    const birthDate = new Date(profile.birthDate);
-    console.log(birthDate);
     return(
         <div className="row pt-2">
             <div className="col-1 wd-flex wd-v-center pb-2">
@@ -26,8 +25,12 @@ const Profile = () => {
             </div>
             <div className="col-9"/>
             <div className="col-3 pt-3 pe-4 ps-3">
-                <button className="btn btn-primary p-2 wd-btn wd-tweet-btn">Edit Profile</button>
-            </div>
+                <Link to="/a7/twitter/editProfile">
+                    <button className="btn btn-primary p-2 wd-btn wd-tweet-btn">
+                        Edit Profile
+                    </button>
+                </Link>
+                </div>
             <div className="pt-4 wd-profile-name">
                 {profile.name}
             </div>

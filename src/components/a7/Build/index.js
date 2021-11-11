@@ -20,7 +20,12 @@ const Build = () => {
             <div>
                 <Route path={["/a7/twitter/", "/a7/twitter/home"]} exact={true} component={HomeScreen}/>
                 <Route path={["/a7/twitter/explore"]} exact={true} component={ExploreScreen}/>
-                <Route path={["/a7/twitter/profile"]} exact={true} component={ProfileScreen}/>
+                <Route path={["/a7/twitter/profile"]} exact={true}>
+                    <ProfileScreen profilePage={true}/>
+                </Route>
+                <Route path={["/a7/twitter/editProfile"]} exact={true}>
+                    <ProfileScreen profilePage={false}/>
+                </Route>
             </div>
         </Provider>
     );

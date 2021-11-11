@@ -325,3 +325,20 @@ body {
     font-size: 20px;
     font-weight: 800;
 }
+
+.wd-editProfileInput {
+    width: 100%;
+    background-color: inherit;
+    color: rgb(217, 217, 217);
+    border: none;
+}
+
+.wd-editProfileInput:focus{
+    border: none;
+}
+
+.wd-editProfileInput-div {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgb(47, 51, 54);
+}
