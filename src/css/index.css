@@ -333,6 +333,11 @@ body {
     border: none;
 }
 
+.wd-editProfileDate {
+    color: rgb(217, 217, 217);
+    border: none;
+}
+
 .wd-editProfileInput:focus{
     border: none;
 }

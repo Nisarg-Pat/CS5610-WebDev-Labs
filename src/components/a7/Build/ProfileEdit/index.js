@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from "react-redux";
 const ProfileEdit = () => {
     const profile = useSelector((state) => state.profile)[0];
     const [profileState, setProfile] = useState({...profile});
-    console.log(profileState);
     const dispatch = useDispatch();
     const history = useHistory();
 
@@ -37,6 +36,13 @@ const ProfileEdit = () => {
                 newProfile = {
                     ...profile,
                     website:change
+                }
+                setProfile(newProfile);
+                break;
+            case "birthDateChange":
+                newProfile = {
+                    ...profile,
+                    birthDate:change
                 }
                 setProfile(newProfile);
                 break;
@@ -122,6 +128,19 @@ const ProfileEdit = () => {
                            placeholder="Website"
                            onChange={(event) => {
                                profileChangeHandler(event.target.value, "websiteChange")
+                           }}/>
+                </label>
+            </div>
+
+            <div className="col-12 pt-3">
+                <label className="wd-editProfileInput-div">
+                    <span className="wd-color-grey">Birth Date</span><br/>
+                    <input className="wd-editProfileDate"
+                           type="date"
+                           value={profileState.birthDate}
+                           placeholder="Website"
+                           onChange={(event) => {
+                               profileChangeHandler(event.target.value, "birthDateChange")
                            }}/>
                 </label>
             </div>

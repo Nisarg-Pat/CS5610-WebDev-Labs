@@ -2,6 +2,16 @@ import React from "react";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
+const getDateString = (date) => {
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"];
+    const dateObj = new Date(date);
+    const month = monthNames[dateObj.getMonth()];
+    const day = String(dateObj.getDate()+1);
+    const year = dateObj.getFullYear();
+    return month + '\n' + day + ',' + year;
+}
+
 const Profile = () => {
     const profile = useSelector((state) => state.profile)[0];
     return(
@@ -42,10 +52,10 @@ const Profile = () => {
             </div>
             <div className="wd-color-grey pt-4">
                 <i className="fas fa-map-marker-alt pe-1"/> {profile.location}
-                <i className="fas fa-birthday-cake ps-3 pe-1"/> Born {profile.birthDate}
+                <i className="fas fa-birthday-cake ps-3 pe-1"/> Born {getDateString(profile.birthDate)}
                 <i className="far fa-calendar-alt ps-3 pe-1"/> Joined {profile.dateJoined}
             </div>
-            <div className="pt-2">
+            <div className="pt-2 pb-2">
                 <span className="wd-bold">
                     {profile.following}
                 </span>
