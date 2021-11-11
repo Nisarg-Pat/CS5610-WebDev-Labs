@@ -19,7 +19,8 @@ const WhatsHappening = () => {
             <div className="col-10 col-sm-10 col-md-11 col-lg-11 col-xl-11 col-xxl-11 wd-post-content">
                 <textarea value={whatsHappening}
                           onChange={(event => setWhatsHappening(event.target.value))}
-                          className="wd-whatsHappeningTextArea">
+                          className="wd-whatsHappeningTextArea"
+                            placeholder="What's happening">
                 </textarea>
                 <div className="row wd-v-center">
                     <div className="col-10">

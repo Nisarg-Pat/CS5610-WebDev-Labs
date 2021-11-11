@@ -6,11 +6,12 @@ import ProfileScreen from "./ProfileScreen";
 
 import who from "../../../reducers/who";
 import tweetsReducer from "../../../reducers/tweetsReducer";
+import profileReducer from "../../../reducers/profileReducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
 
-const reducer = combineReducers({who, tweets: tweetsReducer});
+const reducer = combineReducers({who, tweets: tweetsReducer, profile: profileReducer});
 const store = createStore(reducer);
 
 const Build = () => {
