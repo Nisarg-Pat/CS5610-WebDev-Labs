@@ -33,9 +33,9 @@ const Profile = () => {
                 </div>
             </div>
             <div className="wd-relative">
-                <img src={profile.backImage} className="wd-profile-imgBack"/>
+                <img src={profile.backImage} className="wd-profile-imgBack" alt="Profile Back"/>
                 <div className="wd-profile-inner-img">
-                    <img src={profile.frontImage} className="wd-profile-imgFront"/>
+                    <img src={profile.frontImage} className="wd-profile-imgFront" alt="Profile Front"/>
                 </div>
             </div>
             <div className="col-9"/>

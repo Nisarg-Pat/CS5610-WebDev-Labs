@@ -76,7 +76,7 @@ const TweetListItem = ({
                             </span>
                         </div>
                         <div className="col-1">
-                            <span className="wd-h-right wd-color-grey">
+                            <span className="wd-h-right wd-color-grey wd-pointer">
                                 <i onClick={deleteTweetClickHandler} className="fas fa-times"/>
                             </span>
                         </div>

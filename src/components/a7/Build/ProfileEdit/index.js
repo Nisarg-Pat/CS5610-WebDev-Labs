@@ -13,35 +13,42 @@ const ProfileEdit = () => {
         switch (inputType) {
             case "nameChange":
                 newProfile = {
-                    ...profile,
+                    ...profileState,
                     name: change
+                }
+                setProfile(newProfile);
+                break;
+            case "handleChange":
+                newProfile = {
+                    ...profileState,
+                    handle: change
                 }
                 setProfile(newProfile);
                 break;
             case "bioChange":
                 newProfile = {
-                    ...profile,
+                    ...profileState,
                     bio: change
                 }
                 setProfile(newProfile);
                 break;
             case "locationChange":
                 newProfile = {
-                    ...profile,
+                    ...profileState,
                     location: change
                 }
                 setProfile(newProfile);
                 break;
             case "websiteChange":
                 newProfile = {
-                    ...profile,
+                    ...profileState,
                     website: change
                 }
                 setProfile(newProfile);
                 break;
             case "birthDateChange":
                 newProfile = {
-                    ...profile,
+                    ...profileState,
                     birthDate: change
                 }
                 setProfile(newProfile);
@@ -82,9 +89,9 @@ const ProfileEdit = () => {
                 </button>
             </div>
             <div className="wd-relative">
-                <img src={profile.backImage} className="wd-profile-imgBack"/>
+                <img src={profile.backImage} className="wd-profile-imgBack" alt="Profile Back"/>
                 <div className="wd-profile-inner-img">
-                    <img src={profile.frontImage} className="wd-profile-imgFront"/>
+                    <img src={profile.frontImage} className="wd-profile-imgFront" alt="Profile Front"/>
                 </div>
             </div>
             <div className="col-9"/>
@@ -99,6 +106,17 @@ const ProfileEdit = () => {
                     }}
                            className="wd-editProfileInput"
                            value={profileState.name}/>
+                </label>
+            </div>
+
+            <div className="col-12 pt-3">
+                <label className="wd-editProfileInput-div">
+                    <span className="wd-color-grey">Handle</span><br/>
+                    <input onChange={(event) => {
+                        profileChangeHandler(event.target.value, "handleChange")
+                    }}
+                           className="wd-editProfileInput"
+                           value={profileState.handle}/>
                 </label>
             </div>
 
