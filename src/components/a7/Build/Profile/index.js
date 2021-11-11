@@ -1,23 +1,28 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 const getDateString = (date) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
                         "July", "August", "September", "October", "November", "December"];
     const dateObj = new Date(date);
     const month = monthNames[dateObj.getMonth()];
-    const day = String(dateObj.getDate()+1);
+    const day = String(dateObj.getDate() + 1);
     const year = dateObj.getFullYear();
     return month + '\n' + day + ',' + year;
 }
 
 const Profile = () => {
     const profile = useSelector((state) => state.profile)[0];
-    return(
+    const history = useHistory();
+    const backPressHandler = () => {
+        history.push("/a7/twitter/home");
+    }
+    return (
         <div className="row pt-2">
-            <div className="col-1 wd-flex wd-v-center pb-2">
-                <i className="fas fa-arrow-left"/>
+            <div className="col-1 wd-flex wd-v-center pb-2 wd-pointer"
+                 onClick={backPressHandler}>
+                <i className="fas fa-arrow-left fa-2x ps-2"/>
             </div>
             <div className="col-10 pb-2">
                 <div className="wd-bold">
@@ -40,7 +45,7 @@ const Profile = () => {
                         Edit Profile
                     </button>
                 </Link>
-                </div>
+            </div>
             <div className="pt-4 wd-profile-name">
                 {profile.name}
             </div>
@@ -50,9 +55,16 @@ const Profile = () => {
             <div className="pt-3">
                 {profile.bio}
             </div>
+            {profile.website !== undefined ?
+                <div className="pt-3 wd-blue">
+                    {profile.website}
+                </div>:
+                 <></>
+            }
             <div className="wd-color-grey pt-4">
                 <i className="fas fa-map-marker-alt pe-1"/> {profile.location}
-                <i className="fas fa-birthday-cake ps-3 pe-1"/> Born {getDateString(profile.birthDate)}
+                <i className="fas fa-birthday-cake ps-3 pe-1"/> Born {getDateString(
+                profile.birthDate)}
                 <i className="far fa-calendar-alt ps-3 pe-1"/> Joined {profile.dateJoined}
             </div>
             <div className="pt-2 pb-2">

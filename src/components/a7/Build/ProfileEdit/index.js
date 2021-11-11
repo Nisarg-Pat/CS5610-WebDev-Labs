@@ -14,35 +14,35 @@ const ProfileEdit = () => {
             case "nameChange":
                 newProfile = {
                     ...profile,
-                    name:change
+                    name: change
                 }
                 setProfile(newProfile);
                 break;
             case "bioChange":
                 newProfile = {
                     ...profile,
-                    bio:change
+                    bio: change
                 }
                 setProfile(newProfile);
                 break;
             case "locationChange":
                 newProfile = {
                     ...profile,
-                    location:change
+                    location: change
                 }
                 setProfile(newProfile);
                 break;
             case "websiteChange":
                 newProfile = {
                     ...profile,
-                    website:change
+                    website: change
                 }
                 setProfile(newProfile);
                 break;
             case "birthDateChange":
                 newProfile = {
                     ...profile,
-                    birthDate:change
+                    birthDate: change
                 }
                 setProfile(newProfile);
                 break;
@@ -60,13 +60,18 @@ const ProfileEdit = () => {
         history.push("/a7/twitter/profile");
     }
 
-    return(
+    const backPressHandler = () => {
+        history.push("/a7/twitter/profile");
+    }
+
+    return (
         <div className="row pt-2">
-            <div className="col-1 wd-flex wd-v-center pb-2">
-                <i className="fas fa-times"/>
+            <div className="col-1 wd-flex wd-v-center pb-2 wd-pointer"
+                 onClick={backPressHandler}>
+                <i className="fas fa-times ps-3"/>
             </div>
             <div className="col-9 pb-2 wd-flex wd-v-center">
-                <div className="wd-bold">
+                <div className="wd-bold wd-fontSize-20">
                     Edit
                 </div>
             </div>
@@ -100,7 +105,7 @@ const ProfileEdit = () => {
             <div className="col-12 pt-3">
                 <label className="wd-editProfileInput-div">
                     <span className="wd-color-grey">Bio</span><br/>
-                    <textarea className="wd-editProfileInput"
+                    <textarea className="wd-editProfileBio"
                               value={profileState.bio}
                               onChange={(event) => {
                                   profileChangeHandler(event.target.value, "bioChange")
@@ -132,7 +137,7 @@ const ProfileEdit = () => {
                 </label>
             </div>
 
-            <div className="col-12 pt-3">
+            <div className="col-12 pt-3 pb-2">
                 <label className="wd-editProfileInput-div">
                     <span className="wd-color-grey">Birth Date</span><br/>
                     <input className="wd-editProfileDate"
