@@ -7,6 +7,9 @@ const WhatsHappening = () => {
     const tweetClickHandler = () => {
         dispatch({type: "create-tweet", tweetTitle: whatsHappening});
     }
+    const tweetClickHandler2 = () => {
+        dispatch({type: "create-tweet2", tweetTitle: whatsHappening});
+    }
 
     return (
         <div className="row wd-white wd-border-bottom p-3">
@@ -20,7 +23,7 @@ const WhatsHappening = () => {
                 </textarea>
                 <div className="row wd-v-center">
                     <div className="col-10">
-                        <i className="fas fa-image wd-blue wd-padding-10px"/>
+                        <i onClick={tweetClickHandler2} className="fas fa-image wd-blue wd-padding-10px wd-pointer"/>
                         <i className="fas fa-chart-line wd-blue wd-padding-10px"/>
                         <i className="far fa-smile wd-blue wd-padding-10px"/>
                         <i className="far fa-calendar wd-blue wd-padding-10px"/>
@@ -31,9 +34,6 @@ const WhatsHappening = () => {
                             </button>
                     </div>
                 </div>
-
-
-
             </div>
 
         </div>

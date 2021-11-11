@@ -92,7 +92,7 @@ const NavigationSidebar = (
                     </div>
 
                 </Link>
-                <Link to="#" className={`list-group-item list-group-item-action ${active === 'profile'
+                <Link to="/a7/twitter/profile" className={`list-group-item list-group-item-action ${active === 'profile'
                                        ? 'wd-navigation-list-item-active'
                                        : 'wd-navigation-list-item'}`}
                    aria-current="true">

@@ -17,10 +17,26 @@ const tweetsReducer = (state = tweets, action) => {
                 "like": 345,
                 "liked": false
             };
-            console.log(tweet);
-            console.log(state);
             return ([
                 tweet,
+                ...state]);
+        case "create-tweet2":
+            const tweet2 = {
+                _id: (new Date()).getTime() + '',
+                "userImage": "/images/react.png",
+                "userName": "ReactJS",
+                "image": "/images/webdev.png",
+                "userHandle": "ReactJS",
+                "verified": false,
+                "time": "2h",
+                "title": action.tweetTitle,
+                "comment": 123,
+                "retweet": 234,
+                "like": 345,
+                "liked": false
+            };
+            return ([
+                tweet2,
                 ...state]);
         case "delete-tweet":
             return state.filter(tweet => tweet._id !== action.tweet._id);
