@@ -12,11 +12,11 @@ const A7 = () => {
                 Practice
             </Link> | &nbsp;
             <Link to="/a7/twitter">
-                Build
+                Build(Twitter Home)
             </Link> | &nbsp;
-            {/*<Link to="/a7/twitter/home">*/}
-            {/*    Challenge*/}
-            {/*</Link>*/}
+            <Link to="/a7/twitter/profile">
+                Challenge(Twitter Profile)
+            </Link>
         </>
     )
 };
