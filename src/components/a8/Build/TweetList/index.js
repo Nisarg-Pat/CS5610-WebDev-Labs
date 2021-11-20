@@ -1,13 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import TweetListItem from "./TweetListItem";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchAllTweets} from "../../../../services/tweetService";
 
 const TweetList = () => {
-    const posts = useSelector((state) => state.tweets);
+    const dispatch = useDispatch();
+    useEffect(() => fetchAllTweets(dispatch), [])
+
+    const selectAllTweets = (state) => state.tweets;
+    const tweets = useSelector(selectAllTweets);
     return (
         <div className="list-group wd-list-item">
-            {posts.map((thisPost, key) => <TweetListItem posts={thisPost} key={key}/>)}
+            {tweets.map((tweet, key) => <TweetListItem posts={tweet} key={key}/>)}
         </div>
     )
 }

@@ -5,10 +5,38 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
-        dispatch({type: "create-tweet", tweetTitle: whatsHappening});
+        const newTweet = {
+            _id: (new Date()).getTime() + '',
+            "userImage": "/images/react.png",
+            "userName": "ReactJS",
+            "topic": "Web Development",
+            "userHandle": "ReactJS",
+            "verified": false,
+            "time": "2h",
+            "title": whatsHappening,
+            "comment": 123,
+            "retweet": 234,
+            "like": 345,
+            "liked": false
+        };
+        dispatch({type: "create-tweet", newTweet});
     }
     const tweetClickHandler2 = () => {
-        dispatch({type: "create-tweet2", tweetTitle: whatsHappening});
+        const newTweet = {
+            _id: (new Date()).getTime() + '',
+            "userImage": "/images/react.png",
+            "userName": "ReactJS",
+            "image": "/images/webdev.png",
+            "userHandle": "ReactJS",
+            "verified": false,
+            "time": "2h",
+            "title": whatsHappening,
+            "comment": 123,
+            "retweet": 234,
+            "like": 345,
+            "liked": false
+        };
+        dispatch({type: "create-tweet", newTweet});
     }
 
     return (
