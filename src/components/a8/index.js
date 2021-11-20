@@ -1,21 +1,21 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const A7 = () => {
+const A8 = () => {
     return (
         <>
-            <h2>Assignment 7</h2>
-            <Link to="/a7/practice">
+            <h2>Assignment 8</h2>
+            <Link to="/a8/practice">
                 Practice
             </Link> | &nbsp;
-            <Link to="/a7/twitter">
+            <Link to="/a8/twitter">
                 Build(Twitter Home)
             </Link> | &nbsp;
-            <Link to="/a7/twitter/profile">
+            <Link to="/a8/twitter/profile">
                 Challenge(Twitter Profile)
             </Link>
         </>
     )
 };
 
-export default A7;
+export default A8;
