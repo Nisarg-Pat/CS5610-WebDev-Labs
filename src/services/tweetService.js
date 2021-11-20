@@ -1,4 +1,6 @@
-const TWEET_API = 'https://web-dev-node-nisargpat.herokuapp.com/api/tweets';
+const TWEET_API = process.env.NODE_ENV === 'development'
+                  ? "http://localhost:4000/api/tweets"
+                  : "https://web-dev-node-nisargpat.herokuapp.com/api/tweets";
 
 export const fetchAllTweets = (dispatch) => {
     fetch(TWEET_API)

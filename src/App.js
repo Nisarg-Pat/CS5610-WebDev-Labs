@@ -32,7 +32,6 @@ function App() {
                   <HomeScreenA6/>
               </Route>
               <Route path={["/a7", "/a7/practice"]} exact={true}>
-                  <A8/>
                   <A7/>
                   <PracticeA7/>
               </Route>

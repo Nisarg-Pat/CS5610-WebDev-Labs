@@ -5,6 +5,9 @@ const A7 = () => {
     return (
         <>
             <h2>Assignment 7</h2>
+            <Link to="/">
+                Hello
+            </Link> | &nbsp;
             <Link to="/a7/practice">
                 Practice
             </Link> | &nbsp;
