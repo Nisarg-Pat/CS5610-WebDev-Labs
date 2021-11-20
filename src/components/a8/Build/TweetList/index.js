@@ -6,7 +6,7 @@ import {fetchAllTweets} from "../../../../services/tweetService";
 
 const TweetList = () => {
     const dispatch = useDispatch();
-    useEffect(() => fetchAllTweets(dispatch), [])
+    useEffect(() => fetchAllTweets(dispatch))
 
     const selectAllTweets = (state) => state.tweets;
     const tweets = useSelector(selectAllTweets);
