@@ -1,6 +1,7 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
 import {Link, useHistory} from "react-router-dom";
+import {getCurrentProfile} from "../../../../services/profileService";
 
 const getDateString = (date) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -13,7 +14,10 @@ const getDateString = (date) => {
 }
 
 const Profile = () => {
-    const profile = useSelector((state) => state.profile)[0];
+    const dispatch = useDispatch();
+    const profileSelector = (state) => state.profile;
+    const profile = useSelector(profileSelector);
+    useEffect(() => getCurrentProfile(dispatch), [dispatch]);
     const history = useHistory();
     const backPressHandler = () => {
         history.push("/a8/twitter/home");

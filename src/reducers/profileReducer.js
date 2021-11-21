@@ -2,9 +2,12 @@ import profile from "./data/profile.json"
 
 const profileReducer = (state = profile, action) => {
     switch (action.type) {
-        case "profileChange":
-            state = [{...action.profile}];
-            return state;
+        case "fetch-profile":
+            return action.profile;
+        case "update-profile":
+            console.log("On update-profile");
+            console.log(action.profile);
+            return action.profile;
         default:
             return state;
     }

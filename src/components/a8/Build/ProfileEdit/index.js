@@ -1,11 +1,20 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useHistory} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
+import {getCurrentProfile, updateCurrentProfile} from "../../../../services/profileService";
 
 const ProfileEdit = () => {
-    const profile = useSelector((state) => state.profile)[0];
-    const [profileState, setProfile] = useState({...profile});
     const dispatch = useDispatch();
+    const profileSelector = (state) => state.profile;
+    const profile = useSelector(profileSelector);
+    let [profileState, setProfile] = useState(profile);
+    useEffect(() => {
+        getCurrentProfile(dispatch, setProfile);
+    }, [dispatch]);
+    console.log("Profile In Edit");
+    console.log(profile);
+    console.log("ProfileState");
+    console.log(profileState);
     const history = useHistory();
 
     const profileChangeHandler = (change, inputType) => {
@@ -59,11 +68,7 @@ const ProfileEdit = () => {
     }
 
     const saveClickHandler = () => {
-        const action = {
-            type: "profileChange",
-            profile: profileState
-        }
-        dispatch(action);
+        updateCurrentProfile(dispatch, profileState);
         history.push("/a8/twitter/profile");
     }
 
