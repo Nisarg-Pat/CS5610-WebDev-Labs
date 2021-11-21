@@ -3,8 +3,9 @@ import {useHistory} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
 const ProfileEdit = () => {
-    const profile = useSelector((state) => state.profile)[0];
-    const [profileState, setProfile] = useState({...profile});
+    const profileSelector = (state) => state.profile;
+    const profile = useSelector(profileSelector);
+    const [profileState, setProfile] = useState(profile);
     const dispatch = useDispatch();
     const history = useHistory();
 
@@ -60,7 +61,7 @@ const ProfileEdit = () => {
 
     const saveClickHandler = () => {
         const action = {
-            type: "profileChange",
+            type: "update-profile",
             profile: profileState
         }
         dispatch(action);

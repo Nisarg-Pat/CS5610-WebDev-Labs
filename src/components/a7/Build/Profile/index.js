@@ -13,7 +13,8 @@ const getDateString = (date) => {
 }
 
 const Profile = () => {
-    const profile = useSelector((state) => state.profile)[0];
+    const profileSelector = (state) => state.profile;
+    const profile = useSelector(profileSelector);
     const history = useHistory();
     const backPressHandler = () => {
         history.push("/a7/twitter/home");

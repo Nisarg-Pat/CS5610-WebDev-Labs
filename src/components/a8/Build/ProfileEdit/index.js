@@ -11,10 +11,6 @@ const ProfileEdit = () => {
     useEffect(() => {
         getCurrentProfile(dispatch, setProfile);
     }, [dispatch]);
-    console.log("Profile In Edit");
-    console.log(profile);
-    console.log("ProfileState");
-    console.log(profileState);
     const history = useHistory();
 
     const profileChangeHandler = (change, inputType) => {
