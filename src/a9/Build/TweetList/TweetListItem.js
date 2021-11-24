@@ -1,7 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTweet} from "../../../../services/tweetService";
-import {likeTweet} from "../../../../services/tweetService";
+import {deleteTweet} from "../../../services/tweetService";
+import {likeTweet} from "../../../services/tweetService";
 
 
 const TitleDescriptionOfImage = ({posts}) => {

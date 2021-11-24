@@ -2,7 +2,7 @@ import React from "react";
 import ExploreComponent from "../ExploreComponent"
 import WhoToFollowList from "../WhoToFollowList";
 import NavigationSidebar from "../NavigationSideBar";
-import "../../../../css/index.css"
+import "../../../index.css"
 
 const ExploreScreen = () => {
     return(

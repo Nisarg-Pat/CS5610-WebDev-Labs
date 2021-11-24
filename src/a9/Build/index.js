@@ -4,9 +4,9 @@ import HomeScreen from "./HomeScreen";
 import ExploreScreen from "./ExploreScreen";
 import ProfileScreen from "./ProfileScreen";
 
-import who from "../../../reducers/who";
-import tweetsReducer from "../../../reducers/tweetsReducer";
-import profileReducer from "../../../reducers/profileReducer";
+import who from "../../reducers/who";
+import tweetsReducer from "../../reducers/tweetsReducer";
+import profileReducer from "../../reducers/profileReducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
@@ -18,12 +18,12 @@ const Build = () => {
     return(
         <Provider store={store}>
             <div>
-                <Route path={["/a8/twitter/", "/a8/twitter/home"]} exact={true} component={HomeScreen}/>
-                <Route path={["/a8/twitter/explore"]} exact={true} component={ExploreScreen}/>
-                <Route path={["/a8/twitter/profile"]} exact={true}>
+                <Route path={["/a9/twitter/", "/a9/twitter/home"]} exact={true} component={HomeScreen}/>
+                <Route path={["/a9/twitter/explore"]} exact={true} component={ExploreScreen}/>
+                <Route path={["/a9/twitter/profile"]} exact={true}>
                     <ProfileScreen profilePage={true}/>
                 </Route>
-                <Route path={["/a8/twitter/editProfile"]} exact={true}>
+                <Route path={["/a9/twitter/editProfile"]} exact={true}>
                     <ProfileScreen profilePage={false}/>
                 </Route>
             </div>

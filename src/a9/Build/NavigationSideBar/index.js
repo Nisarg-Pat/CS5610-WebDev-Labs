@@ -9,12 +9,12 @@ const NavigationSidebar = (
     return (
         <>
             <div className="list-group wd-navigation-list">
-                <Link to="/a8/practice"
+                <Link to="/a9/practice"
                    className="list-group-item list-group-item-action wd-navigation-list-item"
                    aria-current="true">
                     <i className="fab fa-twitter wd-navigation-twitter"/> (Practice)
                 </Link>
-                <Link to="/a8/twitter/home"
+                <Link to="/a9/twitter/home"
                    className={`list-group-item list-group-item-action ${active === 'home' ? 'wd-navigation-list-item-active' : 'wd-navigation-list-item'}`}>
                     <div className="row">
                         <div className="col-1">
@@ -25,7 +25,7 @@ const NavigationSidebar = (
                         </div>
                     </div>
                 </Link>
-                <Link to="/a8/twitter/explore"
+                <Link to="/a9/twitter/explore"
                    className={`list-group-item list-group-item-action ${active === 'explore' ? 'wd-navigation-list-item-active' : 'wd-navigation-list-item'}`}
                    aria-current="true">
                     <div className="row">
@@ -92,7 +92,7 @@ const NavigationSidebar = (
                     </div>
 
                 </Link>
-                <Link to="/a8/twitter/profile" className={`list-group-item list-group-item-action ${active === 'profile'
+                <Link to="/a9/twitter/profile" className={`list-group-item list-group-item-action ${active === 'profile'
                                        ? 'wd-navigation-list-item-active'
                                        : 'wd-navigation-list-item'}`}
                    aria-current="true">

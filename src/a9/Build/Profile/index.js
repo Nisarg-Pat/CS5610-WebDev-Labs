@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Link, useHistory} from "react-router-dom";
-import {getCurrentProfile} from "../../../../services/profileService";
+import {getCurrentProfile} from "../../../services/profileService";
 
 const getDateString = (date) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -20,7 +20,7 @@ const Profile = () => {
     useEffect(() => getCurrentProfile(dispatch), [dispatch]);
     const history = useHistory();
     const backPressHandler = () => {
-        history.push("/a8/twitter/home");
+        history.push("/a9/twitter/home");
     }
     return (
         <div className="row pt-2">
@@ -44,7 +44,7 @@ const Profile = () => {
             </div>
             <div className="col-9"/>
             <div className="col-3 pt-3 pe-4 ps-3">
-                <Link to="/a8/twitter/editProfile">
+                <Link to="/a9/twitter/editProfile">
                     <button className="btn btn-primary p-2 wd-btn wd-tweet-btn">
                         Edit Profile
                     </button>

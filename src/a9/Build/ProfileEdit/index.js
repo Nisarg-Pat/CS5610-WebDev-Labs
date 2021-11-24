@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useHistory} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {getCurrentProfile, updateCurrentProfile} from "../../../../services/profileService";
+import {getCurrentProfile, updateCurrentProfile} from "../../services/profileService";
 
 const ProfileEdit = () => {
     const dispatch = useDispatch();
@@ -65,11 +65,11 @@ const ProfileEdit = () => {
 
     const saveClickHandler = () => {
         updateCurrentProfile(dispatch, profileState);
-        history.push("/a8/twitter/profile");
+        history.push("/a9/twitter/profile");
     }
 
     const backPressHandler = () => {
-        history.push("/a8/twitter/profile");
+        history.push("/a9/twitter/profile");
     }
 
     return (

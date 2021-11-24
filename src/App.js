@@ -12,11 +12,16 @@ import PracticeA8 from "./components/a8/Practice";
 import BuildA8 from "./components/a8/Build";
 import A8 from "./components/a8";
 
+import A9 from "./a9";
+import PracticeA9 from "./a9/Practice";
+import BuildA9 from "./a9/Build";
+
 function App() {
   return (
       <BrowserRouter>
           <div className="container">
               <Route path={["/", "/a6", "/a6/hello", "/a7/hello"]} exact={true}>
+                  <A9/>
                   <A8/>
                   <A7/>
                   <HelloWorldA6/>
@@ -44,6 +49,13 @@ function App() {
               </Route>
               <Route path="/a8/twitter">
                   <BuildA8/>
+              </Route>
+              <Route path={["/a9", "/a9/practice"]} exact={true}>
+                  <A9/>
+                  <PracticeA9/>
+              </Route>
+              <Route path="/a9/twitter">
+                  <BuildA9/>
               </Route>
           </div>
       </BrowserRouter>
