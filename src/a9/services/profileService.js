@@ -1,5 +1,5 @@
 const PROFILE_API = process.env.NODE_ENV === 'development'
-                    ? "http://localhost:4000/api/profile"
+                    ? "http://localhost:4000/rest/profile"
                     : "https://web-dev-node-nisargpat.herokuapp.com/api/profile";
 
 export const getCurrentProfile = (dispatch, setProfile) => {

@@ -7,7 +7,6 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
         const newTweet = {
-            _id: (new Date()).getTime(),
             "userImage": "/images/react.png",
             "userName": "ReactJS",
             "topic": "Web Development",
@@ -20,11 +19,10 @@ const WhatsHappening = () => {
             "like": 345,
             "liked": false
         };
-        postNewTweet(dispatch({type: "create-tweet", newTweet}), newTweet);
+        postNewTweet(dispatch, newTweet);
     }
     const tweetClickHandler2 = () => {
         const newTweet = {
-            _id: (new Date()).getTime(),
             "userImage": "/images/react.png",
             "userName": "ReactJS",
             "image": "/images/webdev.png",
@@ -37,7 +35,7 @@ const WhatsHappening = () => {
             "like": 345,
             "liked": false
         };
-        postNewTweet(dispatch({type: "create-tweet", newTweet}), newTweet);
+        postNewTweet(dispatch, newTweet);
     }
 
     return (

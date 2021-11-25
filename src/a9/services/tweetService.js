@@ -1,5 +1,5 @@
 const TWEET_API = process.env.NODE_ENV === 'development'
-                  ? "http://localhost:4000/api/tweets"
+                  ? "http://localhost:4000/rest/tweets"
                   : "https://web-dev-node-nisargpat.herokuapp.com/api/tweets";
 
 export const fetchAllTweets = (dispatch) => {
@@ -20,8 +20,8 @@ export const postNewTweet = (dispatch, newTweet) =>
         headers: {
             'content-type': 'application/json'
         }
-    }).then(response => response.json()).then(tweet =>
-                  dispatch
+    }).then(response => response.json()).then(newTweet =>
+              dispatch({type: "create-tweet", newTweet})
         );
 
 export const deleteTweet = (dispatch, tweet) =>

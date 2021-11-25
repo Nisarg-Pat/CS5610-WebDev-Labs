@@ -1,6 +1,6 @@
 import profile from "./data/profile.json"
 
-const profileReducer = (state = profile, action) => {
+const profileReducer = (state = {}, action) => {
     switch (action.type) {
         case "fetch-profile":
             return action.profile;
