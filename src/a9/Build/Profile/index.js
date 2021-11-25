@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Link, useHistory} from "react-router-dom";
-import {getCurrentProfile} from "../../../services/profileService";
+import {getCurrentProfile} from "../../services/profileService";
 
 const getDateString = (date) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
