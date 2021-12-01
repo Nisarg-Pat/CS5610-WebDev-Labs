@@ -1,4 +1,6 @@
-const URL = 'http://localhost:4000/rest/movies';
+const URL = process.env.NODE_ENV === 'development'
+                    ? "http://localhost:4000/rest/movies"
+                    : "https://web-dev-node-nisargpat.herokuapp.com/rest/movies";
 
 export const findAllMovies = () =>
     fetch(URL)
