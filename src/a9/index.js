@@ -14,9 +14,9 @@ const A9 = () => {
             <Link to="/a9/twitter">
                 Build(Twitter Home)
             </Link> | &nbsp;
-            {/*<Link to="/a9/twitter/profile">*/}
-            {/*    Challenge(Twitter Profile)*/}
-            {/*</Link>*/}
+            <Link to="/a9/twitter/profile">
+                Challenge(Twitter Profile)
+            </Link>
         </>
     )
 };
