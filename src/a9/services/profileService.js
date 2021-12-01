@@ -5,6 +5,7 @@ const PROFILE_API = process.env.NODE_ENV === 'development'
 export const getCurrentProfile = (dispatch, setProfile) => {
     fetch(PROFILE_API).then((response) => response.json())
         .then((profile) => {
+            console.log(profile);
             dispatch({
                  type: 'fetch-profile',
                  profile
@@ -16,7 +17,7 @@ export const getCurrentProfile = (dispatch, setProfile) => {
 }
 
 export const updateCurrentProfile = (dispatch, newProfile) => {
-    fetch(`${PROFILE_API}/61a02bd259c27f1fa37d274c`, {
+    return fetch(`${PROFILE_API}/61a02bd259c27f1fa37d274c`, {
         method: 'PUT',
         body: JSON.stringify(newProfile),
         headers: {'content-type': 'application/json'

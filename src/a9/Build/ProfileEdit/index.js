@@ -64,8 +64,7 @@ const ProfileEdit = () => {
     }
 
     const saveClickHandler = () => {
-        updateCurrentProfile(dispatch, profileState);
-        history.push("/a9/twitter/profile");
+        updateCurrentProfile(dispatch, profileState).then(() => history.push("/a9/twitter/profile"));
     }
 
     const backPressHandler = () => {
