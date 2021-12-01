@@ -5,7 +5,6 @@ const PROFILE_API = process.env.NODE_ENV === 'development'
 export const getCurrentProfile = (dispatch, setProfile) => {
     fetch(PROFILE_API).then((response) => response.json())
         .then((profile) => {
-            console.log(profile);
             dispatch({
                  type: 'fetch-profile',
                  profile

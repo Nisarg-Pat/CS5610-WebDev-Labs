@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
-import {useSelector} from "react-redux";
 import {fetchAllWho} from "../../services/whoService";
 
 const WhoToFollowList = () => {

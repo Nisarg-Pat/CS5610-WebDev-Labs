@@ -1,5 +1,3 @@
-import tweets from "./data/tweets.json";
-
 const tweetsReducer = (state = [], action) => {
     switch (action.type) {
         case "create-tweet":
